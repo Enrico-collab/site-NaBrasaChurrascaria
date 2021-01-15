@@ -1,0 +1,29 @@
+
+// Estilizando meu cabecalho
+// O nome do meu container é "info", portanto, referencio ele aqui e ponho a cor de fundo de acordo com a paletas de cores.
+.info{
+    background: #391005;
+}
+
+// Referenciado meu link "<a" que esta dentro do meu container "info" e estilizando ele.
+.info a{
+    color: #ffae58;
+    transition: color 0.3s ease-in-out;
+}
+
+.info a:hover{
+    color: #c94118;
+}
+
+// Estilizando meu logo
+#logo{
+font-family: Georgia, 'Times New Roman', Times, serif;
+word-spacing: 0.6rem; // Espaçamento entre as letras
+color: #8F492F;
+}
+
+
+// Referenciando meu link do logo, e tirando a linha debaixo dele.
+#logo a{
+    text-decoration: none;
+}

@@ -1,0 +1,29 @@
+.recomendacao-item{
+    background: rgba(0,0,0,0.6);
+    clip-path: polygon(5% 0, 100% 0, 95% 100%, 0 100%);
+}
+
+.recomendacao-item img{
+    width: 180px;
+
+}
+
+
+.recomendacao-nome{
+    color: #f4f1cb;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+
+.recomendacao-text{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: justify;
+}
+
+
+#recomendacoes h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #f4f1cb;
+
+}

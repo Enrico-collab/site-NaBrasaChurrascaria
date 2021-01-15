@@ -1,0 +1,130 @@
+
+// Referenciando o "<header>"
+// Abaixo vou dizer que o meu "header", vai ter como tamanho minimo uma altura que vai levar em consideração uma conta com a função "calc".
+// Vou dizer então que eu quero que pegue 100% da altura da tela e subtraia por 94 pixels. O 94 pixels é o tamanho que estamos usando para o cabeçalho. 
+// Inserindo a imagem de animação também. ( fogo )
+header{
+    min-height: calc(100vh - 94px);
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(200,0,0,0.4)), url("/img/vídeo/Animação\ Fogo.gif");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+// Referenciando minha linha "row" e centralizando ela.
+.row-bn{
+    min-height: calc(100vh - 94px);
+}
+
+// Dentro do meu banner tem uma linha "h1", estou referenciando ela e estilziando.
+.banner h1{
+    border-top: 4px dotted #f1c70a; // Definindo o topo da borda da minha linha, inserindo uns pontilhados e mudando a cor dos pontilhados.
+    border-bottom: 4px dotted #f1c70a; // Definindo o topo de baixo pra cima da borda da minha linha, inserindo uns pontilhados e mudando a cor dos pontilhados.
+    animation: paraDireita;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+// Criando a nossa animação.
+// Explicando o que fiz abaixo: Fiz uma animação. Ao entrar no site, na parte escrito " Tem Rodizio" com as linhas em cima e embaixo, elas vão se mexer um pouco pro lado e pro outro, ficam balancando um pouco.
+@keyframes paraDireita{
+    0% { 
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    50%{
+        transform: translateX(30px);
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+// Referenciando meu "<small>" e estilizando ele.
+.banner h1 small{
+    color: #f4f1cb;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+// Referenciando meu "<strong>" e referenciando ele.
+.banner h1 strong{
+    color: #f1c70a;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+// Referenciando meu botão de "faça seu pedido" no caso aqui o botão "pedir-btn" e estilizando ele.
+.pedir-btn{
+    color: #f4f1cb;
+    background: #391005;
+    border-radius: 15px;
+    font-size: 2em;
+    border: 2px solid #f1c70a;
+    transition: all 0.5s ease-in-out;
+    animation: paraEsquerda;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+// Estilizando meu botão de "faça seu pedido" ao passar o mouse em cima ( hover ).
+.pedir-btn:hover{
+    color: #7e1819;
+    border: 2px solid #731819;
+    background: #f1c70a;
+}
+
+
+// Criando animação para o botão pedir ( faça seu pedido ).
+// Explicando o que fiz abaixo: Fiz uma animação. Ao entrar no site, na botão escrito "Faça seu pedido", elas vão se mexer um pouco pro lado e pro outro, ficam balancando um pouco.
+@keyframes paraEsquerda{
+    0% { 
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    50%{
+        transform: translateX(-30px);
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+// Referenciando meu "botão da setinha para baixo" e estilizando.
+.btn-adiante{
+    display: inline-block;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    color: #391005;
+    background: #ffae58;
+    border-radius: 10px;
+    transition: all 0.5 ease;
+    animation: paraBaixo;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+// Estilizando meu botão da setinha ao passar o mouse em cima.
+.btn-adiante:hover{
+    background: #f0db00;
+    color: #391005;
+}
+
+// Criando animação para o meu botão da setinha.
+@keyframes paraBaixo{
+    0%{
+        transform: translateY(-10px);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(-10px);
+    }
+}
+
+
+    

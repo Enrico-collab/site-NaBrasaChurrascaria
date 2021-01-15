@@ -1,0 +1,35 @@
+// Arquivo criado para estilizar o meu rodapé.
+
+// Estilizando meu copyright
+#copyright{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #f4f1cb;
+    font-size: 1.3rem; 
+    
+}
+
+// Tirando a linha que fica embaixo das letras do meu coypright
+#copyright a{
+    text-decoration: none;
+}
+
+// Estilizando a botãozinho de voltar ao topo
+#voltar-topo{
+    position: fixed;
+    bottom: 100px;
+    right: 10px;
+    color: #8F492F;
+    display: inline-block;
+    transition: .5s ease;
+}
+
+// Criando efeito ao passar o mouse por cima do meu botãozinho de voltar ao topo.  
+#voltar-topo:hover{
+    color: #f1c70a;
+} 
+
+.scrollTop{
+    position: fixed;
+    bottom: 100px;
+    right: 10px;
+}

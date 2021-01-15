@@ -1,0 +1,76 @@
+// Arquivo criado para estliziar minha parte de  "contato"
+
+// Referenciando meu mapa do google maps e estilizando
+.mapa{
+    min-height: 80vh;
+    border-radius: 5px;
+
+}
+
+
+// Referenciando minha parte "Entre em contato" e estliziando
+// Pondo um plano de fundo preto atras de "entre em contato".
+#contato .cartao{
+    background: rgba(0,0,0,0.4);
+    transition: all  2s ease;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+// Ao passar com o mouse no plano de fundo, ele da uma clareada, cria um efeito legal.
+#contato .cartao:hover{
+    background: rgba(84,33,37,0.4);
+}
+
+// Referenciando meu cabecalho do meu cartao e estilizando ele.
+#contato .cartao-cabecalho{
+    color: #f4f1cb;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+// Referenciando meus inputs e estilizaando eles.
+#contato .input-group-text{
+    background: #391005;
+    border-color: #391005;
+    color: #f1c70a;
+}
+
+#contato .cartao input{
+    color: #391005;
+    border: none;
+
+}
+
+// Referenciando meu placeholder dos input e estilizando.
+#contato .cartao input::placeholder{
+    color: #ae986F;
+    font-style: italic;
+}
+
+
+// Referenciando meu placeholder do textarea e estilizando.
+#contato .cartao textarea::placeholder{
+    color: #ae986F;
+    font-style: italic;
+    text-align: center;
+
+
+}
+
+// Referenciando meu botão de enviar e estilizando
+.contato-btn{
+    color: #f1c70a;
+    background: #391005;
+    border-color: #f1c70a;
+    transition: all 0.5 ease-in-out;
+}
+
+.contato-btn:hover{
+    background: #f1c70a;
+    border-color: #391005;
+    color: #391005;
+}
+
+
+ 

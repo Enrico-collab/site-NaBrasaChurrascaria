@@ -1,0 +1,21 @@
+// Estilizando o "Sobre Nós".
+
+// Referenciando meu h1 e estilizando ele
+.sobre-conteudo h1{
+    color: #f1c70a
+}
+
+
+// Referenciando meu h2 e estilizando ele
+.sobre-conteudo h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #f4f1cb;
+    font-size: 1.3rem;
+    text-align: justify;
+}
+
+.fotos-churrascaria{
+    transform: rotate(3deg);
+    padding-top: 50px;
+    
+}

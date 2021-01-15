@@ -1,0 +1,61 @@
+// Referenciando meu "parent-container" e estilziando meu cardapio.
+// Pondo a fonte do meu container
+.parent-container{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+// Referenciando meu "h1" e mudando sua fonte.
+.container h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #f4f1cb;
+}
+
+// Referenciando meus itens do meu container e estilizando eles.
+.item-container{
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(rgb(0,0,0), rgb(0,0,0,));
+
+}
+
+
+.item-img{
+    transition: all 2s ease;
+}
+
+// Ao passar o mouse em cima das imagens do cardapido, as imagens irao aumentar aos poucos. Um efeito legal.
+.item-container:hover .item-img{
+    transform: scale(1.2);
+    opacity: 0.5;
+}
+
+// Abaixo estou referiando meu link das fotos do cardapio e fazendo ele sumir ( o meu "ver opções", sumir ).
+.item-link{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #f1c70a;
+    border-bottom: 2px solid #f1c70a;
+    border-top: 2px solid #f1c70a;
+    transition: all 2s ease;
+    opacity: 0;
+}
+
+// Abaixo estou fazendo com que aparece o que eu fiz desaparecer acima, ao passar o mouse nas fotos do cardapio ( o meu "ver opções", aparecer, ao passar o mouse em cima das fotos.)
+.item-container:hover .item-link{
+    opacity: 1;
+}
+
+
+// Abaixo estou referenciando meus links das fotos e estilizando eles ao passar o mouse em cima das fotos. Estou pondo eles com uma cor de fundo marron e as bordas amarelas.
+.item-link:hover{
+    color: #f4f1cb;
+    border: 2px solid #f1c70a;
+    background: #391005;
+}
+
+.item-container:hover{
+    outline: 1-px solid #f1c70a;
+    outline-offset: -0.8rem;
+}

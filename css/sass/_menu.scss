@@ -1,0 +1,88 @@
+// Referenciando minha classe "navbar" e estilizando ela.
+.navbar{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: #391005;
+    padding: 20px 20px;
+    transition: all 1s ease;
+}
+
+// Referenciando o background no navbar e estilizando ele.
+.navbar-background{
+    padding: 5px 20px;
+}
+
+// Referenciando a imagem que ficará do lado do menu e estilizando ela.
+.navbar-brand img{
+    height: 50px;
+    transition: all 2s ease-in-out;
+}
+
+// Referenciando a imagem do menu e estilizando ela ao passar o mouse em cima.
+.navbar-brand img:hover{
+    transform: scale(1.1);
+}
+
+.navbar-brand:hover{
+    color: #ffae58;
+}
+
+// Refenreciando meus links ( minhas "li" do menu: home, contato, cozinha, equipe, etc.. e estizando elas.
+.nav-link{
+    color: #ffae58;
+    text-decoration: none;
+    display: inline;
+    transition: all 1s ease;
+    font-size: 23px;
+}
+// Referenciando meus links ( "li" ) e estilizando elas ao passar com o mouse em cima.
+.nav-link:hover{
+    color: #f1c70a;
+}
+
+// Referenciando meu botão "nav-btn" ( pedi agora ) e estilizando ele.
+.nav-btn{
+    background: #391005;
+    color: #f1c70a;
+    border: 2px solid #731819;
+    font-size: 23px;
+    transition: all 1s ease;
+}
+
+// Referenciando meu botão "nav-btn" ( pedir agora ) e estilizando ele ao passar o mouse.
+.nav-btn:hover{
+    color: #391005;
+    border: 2px solid #731819;
+    background: #f1c70a;
+    transform: rotate(5deg); // Ao passar o mouse em cima do botão "pedir agora", ele irá dar uma leve inclinada. Dando um efeito visual legal.
+}
+
+// Referenciando meu "toggler" e por uma bora nele para poder enxerga-lo e mexer nele. ( relacionado aos 3 pontinhos ao diminuir a tela )
+.toggler-btn{
+    border: 2px solid #ffae58;
+    padding: 5px;
+    transition: all 1s ease;
+}
+
+// Referenciando meu "bar" e estilizando ele. Ele serve para, ao diminuir a tela, aparecer os 3 pontinho do meu menu.
+.bar{
+    width: 30px;
+    height: 3px;
+    margin: 5px;
+    background: #ffae58;
+    transition: all 0.5 ease-in-out;
+}
+
+// Referenciando meus "bar's" ( criei ele para, ao diminuir a tela, aparecer os 3 pontinhos do menu ) e estilizando eles para aparecerem ao clikar nos 3 pontinhos.
+.change.bar1{
+    transform: rotate(45deg), translate(8px, 5px)
+}
+
+
+.change.bar2{
+    opacity: 0
+}
+
+
+.change.bar3{
+    transform: rotate(-45deg), translate(6px, -3px)
+}

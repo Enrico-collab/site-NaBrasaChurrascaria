@@ -1,0 +1,32 @@
+// IMPORTS: PARTES DOS ESTILOS DO FRONT END
+@import '_corpo';
+@import '_cabecalho_redessociais';
+@import '_cabecalho_principal';
+@import '_menu';
+@import '_cardapio';
+@import '_sobre';
+@import '_equipe';
+@import '_recomendacoes';
+@import '_contato';
+@import '_rodape';
+@import '_pedidomodal';
+
+
+
+// VARIÁVEIS PARA PALETAS DE CORES
+$vermelho-escuro: #7e1819;
+$marron-escuro:     #391005;
+$marro-claro:      #ae986F;
+$laranja-claro:     #8F492F;
+$laranja-maisclaro: #ffae58;
+$laranja-escuro:    #c94118;
+$amarelo:           #f0db00;
+$amarelo-escuro:    #f1c70a;
+$vermelho:          #d82822;
+$vermelho-claro:    #731819;
+$branco:            #f4f1cb;
+$preto:             #242424;
+
+//VARIÁVEIS PARA AS FONTES
+$fonte_principal: 'Lobster', cursive;
+$fonte_texto: 'Arial';

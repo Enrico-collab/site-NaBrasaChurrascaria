@@ -1,0 +1,137 @@
+// Arquivo criado para estilizar meu pedido Modal. Ao clicar nos botões de "Faça seu pedido" e "Pedir Agora"
+
+.modal-pedido{
+    width: 350px;
+}
+
+
+.form-control{
+    color: #391005;
+
+}
+
+.form-control::placeholder{
+    color: #c94118;
+    font-style: italic;
+}
+
+
+.modal-pedido .modal-content{
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+.modal-pedido .modal-header{
+    border-bottom: none;
+    position: relative;
+}
+
+
+.modal-pedido h4{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 26px;
+
+}
+
+
+// Ao clicar para escrever dentro das caixas de texto, a caixa e o que esta escrito dentro dela fica em negrito. Um efeito legal.
+.modal-pedido .form-control:focus{
+    border-color: #391005;
+    color: #391005;
+    font-weight: bold;
+
+
+}
+
+
+.modal-pedido .form-control .modal-login .btn{
+    min-height: 40px;
+    border-radius: 3px;
+}
+
+
+
+
+.modal-pedido .modal-footer{
+    background: #391005;
+    text-align: center;
+    justify-content: center;
+    margin: 0 -20px -20px;
+    font-size: 13px;
+}
+
+
+
+.modal-pedido .close{
+    top: -5px;
+    right: -5px;
+}
+
+
+
+.modal-pedido .avatar{
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: -70px;
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    z-index: 9;
+    background: #391005;
+    padding: 15px;
+    box-shadow: 0px 2px 2px rgba(0,0,0,0.1);
+}
+
+
+.modal-pedido .avatar img{
+    width: 100%;
+
+}
+
+
+
+.modal-pedido{
+    margin-top: 150px;
+}
+
+
+
+.modal-pedido .btn{
+    color: #f4f1cb;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: #391005;
+    border-color: #391005;
+    text-decoration: none;
+    transition: all 0.4s;
+    line-height: normal;
+    font-weight: bold;
+
+}
+
+
+.modal-pedido .btn:hover .modal-pedido .btn:focus{
+    background: #f1c70a;
+    border-color: #f1c70a;
+    color: #391005;
+    font-weight: bold;
+}
+
+
+.trigger-btn{
+    display: inline-block;
+    margin: 100px auto;
+
+}
+
+
+
+
+
+
+
+
+
+

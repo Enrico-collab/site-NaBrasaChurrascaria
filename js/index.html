@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Todas essas meta tags abaixo, servem para auxiliar nos mecanismos de busca ao encontrar o nosso site. -->
+    <meta name="author" content="Enrico Clemente Amoroso">
+    <meta name="description" content="Site desenvolvido no Curso de Front-end completo">
+    <meta name="keywords" content="curso, frontend, completo, site, moderno">
+
+
+    <!-- A tag <meta abaixo, serve para dizer ao navegador que tudo que aparecer dentro dele, terá uma escala proporcional a 1 com relação ao dispositivo. Porém não será responsivo assim. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- A tag abaixo é voltada a responsividade e compatibilidade  -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+    <!-- Referenciado meu arquivo Bootstrap css -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+
+    <!-- Referenciando meu próprio css personalizado ( sass ) -->
+    <link rel="stylesheet" href="/css/sass/principal.css">
+
+
+    <!-- Referenciando meus ícones vetorizados, font awesome. -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+
+    <!-- Referenciando minhas Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+
+    <!-- Referenciando Magnific Popip = para abrir as imagens em formato de slide -->
+    <link href="/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+
+    <!-- Slick Carrossel -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css" rel="stylesheet">
+
+
+    <title>NA BRASA &bull; CHURRASCARIA </title>
+</head>
+
+<body>
+    <!-- #INÍCIO - CABECALHO DA PAGINA: REDES SOCIAIS -->
+
+    <!--Use "container-fluid" para um container de largura total, abrangendo toda a largura do viewport, ou seja, esse container vai ocupar a tela inteira. ( "container-fluid é do bootstrap ")   -->
+    <!--  "p-2" = "p" é pra classe que define um padding, então já estou definindo pra essa classe um padding de 2. Essa é a vantagem de usar bootstrap -->
+    <!-- "info" = É exatamente os cabeçalhos. -->
+    <div class="container-fluid p-2 info" id="icones-topo">
+        <!-- Criando dentro desse container uma linha -->
+        <div class="row">
+            <!-- Criando dentro da linha uma coluna -->
+            <!-- "d-flex" = Criando dentro dessa coluna um flexbox -->
+            <!-- 'justify-content-center' = Dizendo que o conteúdo dela é justificado ao centro. -->
+            <!-- "justify-content-md-betwenn" = Caso o tamanho for médio, ele vai destribuir -->
+            <!-- "justify-content-sm-between" = Caso for muito pequeno, ele vai justificar o conteúdo -->
+            <!-- "aling-items-baseline" = Esta organizando os items / caixas a partir das bases -->
+            <!-- "flex-wrap" = Caso não couber ele vai automaticamente jogar os itens pra linha de baixo. -->
+            <div
+                class="col d-flex justify-content-center justify-content-md-between justify-content-sm-between align-items-baseline flex-wrap">
+                <div class="p-2 info-icones">
+                    <a href="#" class="mr-2" alt="facebook"><i class="fab fa-facebook-square fa-2x"></i></a>
+                    <!-- "fa-2x" = Estou aumentando o tamanho dos meus ícones em 2x.-->
+                    <a href="#" class="mr-2" alt="instagram"><i class="fab fa-instagram fa-2x"></i></a>
+                    <a href="#" class="mr-2" alt="twitter"><i class="fab fa-twitter-square fa-2x"></i></a>
+                    <a href="#" class="mr-2" alt="whatsapp"><i class="fab fa-whatsapp-square fa-2x"></i></a>
+                </div>
+            </div>
+            <!-- "text-capitalize" = Faz com que a primeira fique sempre maiúscula -->
+            <h2 id="logo" class="p-2 text-capitalize"><a href="#" title="Voltar ao início">São Paulo - SP</a></h2>
+        </div>
+    </div>
+    <!-- #FIM - CABECALHO DA PAGINA: REDES SOCIAIS -->
+
+
+
+
+
+    <!-- INÍCIO = CABEÇALHO DA PÁGINA: ÁREA DESTINADA AO BANNER PRINCIPAL -->
+    <header>
+        <div class="container">
+            <div class="row row-bn align-items-center justify-content-center">
+                <div class="col">
+                    <div class="banner text-center">
+                        <h1 class="display-1 text-capitalize w-47 mx-auto">
+                            <small>Tem</small>
+                            <strong>Rodizio</strong>
+                        </h1>
+
+                        <a href="#pedidoModal" class="btn pedir-btn my-2  text-capitalize" class="trigger-btn"
+                            data-toggle="modal">Faça seu pedido</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="#cardapio " alt="Ir para a próxima página do site." class="btn btn-adiante"><i
+                class="fas fa-arrow-down"></i></a>
+    </header>
+    <!-- FIM = CABEÇALHO DA PÁGINA: ÁREA DESTINADA AO BANNER PRINCIPAL -->
+
+
+
+
+
+
+    <!-- INICIO = ÁREA COM O MENU DO SITE -->
+    <nav class="navbar navbar-expand-lg">
+        <a href="#" class="navbar-brand"><img src="img/logo/grill.png"></a>
+        <button class="navbar-toggler" type="buttom" data-toggle="collapse" data-target="#minhaNavBar">
+            <div class="toggler-btn">
+                <!-- Aqui serve para ao diminuir a tela e ela ficar no tamanho de uma tela de celular, aparecer os 3 pontinhos la em cima, que no caso seriam para aparecer os menus do meu site ( home, page, equipe, cozinha, etc). -->
+                <div class="bar bar1"></div>
+                <div class="bar bar2"></div>
+                <div class="bar bar3"></div>
+            </div>
+        </button>
+
+        <div class="collapse navbar-collapse" id="#minhaNavBar">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a href="#icones-topo" class="nav-link text-capitalize">Home</a></li>
+                <li class="nav-item"><a href="#cardapio" class="nav-link text-capitalize">Cardápio</a></li>
+                <li class="nav-item"><a href="#sobre" class="nav-link text-capitalize">Sobre</a></li>
+                <li class="nav-item"><a href="#equipe" class="nav-link text-capitalize">Equipe</a></li>
+                <li class="nav-item"><a href="#cozinha" class="nav-link text-capitalize">Cozinha</a></li>
+                <li class="nav-item"><a href="#recomendacoes" class="nav-link text-capitalize">Recomendações</a></li>
+                <li class="nav-item"><a href="#contato" class="nav-link text-capitalize">Contatos</a></li>
+
+            </ul>
+
+            <form class="form-inline d-none d-lg-block mr-5">
+                <a href="#pedidoModal" class="btn nav-btn text-capitalize" class="trigger-btn" data-toggle="modal">Pedir
+                    Agora</a>
+            </form>
+
+        </div>
+
+    </nav>
+    <!-- FIM = ÁREA COM O MENU DO SITE -->
+
+
+
+
+
+    <!-- INICIO = AREA COM O CARDAPIO DO SITE -->
+    <section class="py-5" id="cardapio">
+        <!-- Inicio: Pratos e Porções -->
+        <div class="container my-5">
+            <h1 class="text-center"><i class="fas fa-utensils"></i> <br> Pratos & Porções</h1>
+
+            <div class="carrosel row parent-container">
+
+                <!-- Item 01 do Cardápio -->
+                <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
+                    <div class="item-container">
+                        <img src="/img/cardapio/barbecue-on-grill-with-sauce-platter-929192.jpg"
+                            class="img-fluid img-thumbnail item-img" alt="Item do Cardápio">
+                        <a href="/img/cardapio/barbecue-on-grill-with-sauce-platter-929192.jpg">
+                            <h1 class="text-uppercase text-center item-link px-3">Ver Opções</h1>
+                        </a>
+                    </div>
+                </div>
+
+
+
+                <!-- Item 02 do Cardápio -->
+                <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
+                    <div class="item-container">
+                        <img src="/img/cardapio/barbecue-bbq-beef-cooked-410648.jpg"
+                            class="img-fluid img-thumbnail item-img" alt="Item do Cardápio">
+                        <a href="/img/cardapio/barbecue-bbq-beef-cooked-410648.jpg">
+                            <h1 class="text-uppercase text-center item-link px-3">Ver Opções</h1>
+                        </a>
+                    </div>
+                </div>
+
+
+
+
+                <!-- Item 03 do Cardápio -->
+                <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
+                    <div class="item-container">
+                        <img src="/img/cardapio/cooked-meat-with-vegetables-725991.jpg"
+                            class="img-fluid img-thumbnail item-img" alt="Item do Cardápio">
+                        <a href="/img/cardapio/cooked-meat-with-vegetables-725991.jpg">
+                            <h1 class="text-uppercase text-center item-link px-3">Ver Opções</h1>
+                        </a>
+                    </div>
+                </div>
+
+
+
+
+                <!-- Item 04 do Cardápio -->
+                <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
+                    <div class="item-container">
+                        <img src="/img/cardapio/food-restaurant-meal-chicken-106343.jpg"
+                            class="img-fluid img-thumbnail item-img" alt="Item do Cardápio">
+                        <a href="/img/cardapio/food-restaurant-meal-chicken-106343.jpg">
+                            <h1 class="text-uppercase text-center item-link px-3">Ver Opções</h1>
+                        </a>
+                    </div>
+                </div>
+
+
+
+
+                <!-- Item 05 do Cardápio -->
+                <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
+                    <div class="item-container">
+                        <img src="/img/cardapio/churrasco.jpg" class="img-fluid img-thumbnail item-img"
+                            alt="Item do Cardápio">
+                        <a href="/img/cardapio/churrasco.jpg">
+                            <h1 class="text-uppercase text-center item-link px-3">Ver Opções</h1>
+                        </a>
+                    </div>
+                </div>
+
+
+
+                <!-- Item 06 do Cardápio -->
+                <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
+                    <div class="item-container">
+                        <img src="/img/cardapio/churras.jpg" class="img-fluid img-thumbnail item-img"
+                            alt="Item do Cardápio">
+                        <a href="/img/cardapio/churras.jpg">
+                            <h1 class="text-uppercase text-center item-link px-3">Ver Opções</h1>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fim: Pratos e Porções -->
+
+
+
+        <!-- Inicio: Bebidas -->
+        <div class="container my-5">
+            <h1 class="text-center"><i class="fas fa-beer"></i> <br> Pratos & Porções</h1>
+
+            <div class="carrosel row parent-container">
+
+                <!-- Item 01 das bebidas -->
+                <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
+                    <div class="item-container">
+                        <img src="/img/bebidas/coca-cola.jpg" class="img-fluid img-thumbnail item-img"
+                            alt="Item do Cardápio">
+                        <a href="/img/bebidas/coca-cola.jpg">
+                            <h1 class="text-uppercase text-center item-link px-3">Ver Opções</h1>
+                        </a>
+                    </div>
+                </div>
+
+
+
+                <!-- Item 02 das bebidas -->
+                <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
+                    <div class="item-container">
+                        <img src="/img/bebidas/corona.jpg" class="img-fluid img-thumbnail item-img"
+                            alt="Item do Cardápio">
+                        <a href="/img/bebidas/corona.jpg">
+                            <h1 class="text-uppercase text-center item-link px-3">Ver Opções</h1>
+                        </a>
+                    </div>
+                </div>
+
+
+
+
+                <!-- Item 03 das bebidas -->
+                <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
+                    <div class="item-container">
+                        <img src="/img/bebidas/drinks.jpg" class="img-fluid img-thumbnail item-img"
+                            alt="Item do Cardápio">
+                        <a href="/img/bebidas/drinks.jpg">
+                            <h1 class="text-uppercase text-center item-link px-3">Ver Opções</h1>
+                        </a>
+                    </div>
+                </div>
+
+
+
+
+                <!-- Item 04 das bebidas -->
+                <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
+                    <div class="item-container">
+                        <img src="/img/bebidas/heineken.jpg" class="img-fluid img-thumbnail item-img"
+                            alt="Item do Cardápio">
+                        <a href="/img/bebidas/heineken.jpg">
+                            <h1 class="text-uppercase text-center item-link px-3">Ver Opções</h1>
+                        </a>
+                    </div>
+                </div>
+
+
+
+
+                <!-- Item 05 das bebidas -->
+                <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
+                    <div class="item-container">
+                        <img src="/img/bebidas/laranja.jpg" class="img-fluid img-thumbnail item-img"
+                            alt="Item do Cardápio">
+                        <a href="/img/bebidas/laranja.jpg">
+                            <h1 class="text-uppercase text-center item-link px-3">Ver Opções</h1>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fim: Bebidas -->
+    </section>
+    <!-- FIM = AREA COM O CARDAPIO DO SITE -->
+
+
+
+
+    <!-- INICIO = AREA SOBRE NÓS -->
+    <section id="sobre" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 my-5 sobre-conteudo">
+                    <h1 class="text-uppercase display-5">Sobre Nós</h1>
+                    <h2>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book
+                    </h2>
+
+                    <a href="#" class="btn pedir-btn my-4 text-capitalize">Leia Mais</a>
+                </div>
+                <div class="col-md-5 col-sm-12 fotos-churrascaria">
+                    <img src="/img/churrascaria/group-of-people-gathering-inside-bar-1058277.jpg"
+                        alt="Imagem da Churrascaria" class="img-thumbnail">
+                    <img src="/img/churrascaria/mesas.jpg" alt="Imagem da Churrascaria" class="img-thumbnail">
+                    <img src="/img/churrascaria/chef-preparing-vegetable-dish-on-tree-slab-1267320.jpg"
+                        alt="Imagem da Churrascaria" class="img-thumbnail">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FIM = AREA SOBRE NÓS -->
+
+
+
+
+
+
+    <!-- INICIO = EQUIPE -->
+    <section id="equipe">
+        <div class="container">
+            <h1 class="text-center"><i class="fas fa-users"></i> <br> Equipe</h1>
+
+            <div class="row">
+                <!-- Inicio - Cartão funcionário 01 -->
+                <div class="col-md-3 col sm 6">
+                    <div class="equipe">
+                        <div class="foto">
+                            <img src="/img/equipe/man-in-brown-button-up-shirt-3789888.jpg" alt="Foto do Funcionário">
+                        </div>
+
+                        <div class="equipe-content">
+                            <h3 class="titulo">Enrico</h3>
+                            <span class="funcao">Chefe</span>
+                        </div>
+
+                        <ul class="contatos">
+                            <li><a href="#" class="fab fa-facebook"></a></li>
+                            <li><a href="#" class="fab fa-instagram"></a></li>
+                            <li><a href="#" class="fab fa-twitter"></a></li>
+                            <li><a href="#" class="fab fa-google-plus"></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Fim - Cartão funcionário 01 -->
+
+                <!-- Inicio - Cartão funcionário 02 -->
+                <div class="col-md-3 col sm 6">
+                    <div class="equipe">
+                        <div class="foto">
+                            <img src="/img/equipe/man-in-red-polo-shirt-3777948.jpg" alt="Foto do Funcionário">
+                        </div>
+
+                        <div class="equipe-content">
+                            <h3 class="titulo">Ricardo</h3>
+                            <span class="funcao">Funcionário</span>
+                        </div>
+
+                        <ul class="contatos">
+                            <li><a href="#" class="fab fa-facebook"></a></li>
+                            <li><a href="#" class="fab fa-instagram"></a></li>
+                            <li><a href="#" class="fab fa-twitter"></a></li>
+                            <li><a href="#" class="fab fa-google-plus"></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Fim - Cartão funcionário 02 -->
+
+                <!-- Inicio - Cartão funcionário 03 -->
+                <div class="col-md-3 col sm 6">
+                    <div class="equipe">
+                        <div class="foto">
+                            <img src="/img/equipe/smiling-woman-in-gray-tank-top-3812720.jpg" alt="Foto do Funcionário">
+                        </div>
+
+                        <div class="equipe-content">
+                            <h3 class="titulo">Andreza</h3>
+                            <span class="funcao">Funcionária</span>
+                        </div>
+
+                        <ul class="contatos">
+                            <li><a href="#" class="fab fa-facebook"></a></li>
+                            <li><a href="#" class="fab fa-instagram"></a></li>
+                            <li><a href="#" class="fab fa-twitter"></a></li>
+                            <li><a href="#" class="fab fa-google-plus"></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Fim - Cartão funcionário 03 -->
+
+                <!-- Inicio - Cartão funcionário 04 -->
+                <div class="col-md-3 col sm 6">
+                    <div class="equipe">
+                        <div class="foto">
+                            <img src="/img/equipe/smiling-young-woman-looking-at-camera-3945756.jpg"
+                                alt="Foto do Funcionário">
+                        </div>
+
+                        <div class="equipe-content">
+                            <h3 class="titulo">Jaqueline</h3>
+                            <span class="funcao">Funcionária</span>
+                        </div>
+
+                        <ul class="contatos">
+                            <li><a href="#" class="fab fa-facebook"></a></li>
+                            <li><a href="#" class="fab fa-instagram"></a></li>
+                            <li><a href="#" class="fab fa-twitter"></a></li>
+                            <li><a href="#" class="fab fa-google-plus"></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Fim - Cartão funcionário 04 -->
+            </div>
+        </div>
+    </section>
+    <!-- FIM = EQUIPE -->
+
+
+
+
+
+
+    <!-- INICIO = AREA DA COZINHA -->
+    <section id="cozinha" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-sm-12 fotos-churrascaria" style="transform: rotate(-3deg)">
+                    <img src="/img/cozinha/food-chef-kitchen-soup-66639.jpg" alt="Imagem da Cozinha"
+                        class="img-thumbnail">
+                    <img src="/img/cozinha/man-and-woman-wearing-black-and-white-striped-aprons-2696064.jpg"
+                        alt="Imagem da Cozinha" class="img-thumbnail">
+                </div>
+
+                <div class="col-md-7 my-5 sobre-conteudo">
+                    <h1 class="text-uppercase display-5">Cozinha</h1>
+                    <h2>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book
+                    </h2>
+                    <a href="#" style="float: right" class="btn pedir-btn my-4 text-capitalize">Leia Mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FIM = AREA DA COZINHA-->
+
+
+
+
+
+
+    <!-- INICIO = AREA DE RECOMENDAÇÕES -->
+    <section id="recomendacoes" class="py-5">
+        <h1 class="text-center"><i class="fas fa-thumbs-up"></i> <br> Recomendações</h1>
+        <div id="slider" class="carousel-slide" data-ride="carousel">
+            <div class="carousel-inner">
+
+                <!-- Inicio= Recomendação 01 -->
+                <div class="carousel-item active">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-10mx-auto d-flex recomendacao-item py-3">
+                                <!-- Foto da pessoa -->
+                                <div class="align-slef-center ml-5">
+                                    <img src="/img/equipe/man-in-red-polo-shirt-3777948.jpg" alt="Cliente"
+                                        class="rounded-circle recomendacao-foto">
+                                </div>
+                                <!-- Texto recomendação -->
+                                <div class="align-self-center recomendacao-nome px-5">
+                                    <h2 class="text-capitalize mb-3">Mária</h2>
+                                    <p class="recomendacao-texto">Lorem Ipsum is simply dummy text of the printing and
+                                        typesetting industry. Lorem Ipsum has been
+                                        the industry's standard dummy text ever since</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fim = Recomendação 01 -->
+
+                <!-- Inicio= Recomendação 02 -->
+                <div class="carousel-item active">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-10mx-auto d-flex recomendacao-item py-3">
+                                <!-- Foto da pessoa -->
+                                <div class="align-slef-center ml-5">
+                                    <img src="/img/equipe/man-in-red-polo-shirt-3777948.jpg" alt="Cliente"
+                                        class="rounded-circle recomendacao-foto">
+                                </div>
+                                <!-- Texto recomendação -->
+                                <div class="align-self-center recomendacao-nome px-5">
+                                    <h2 class="text-capitalize mb-3">João</h2>
+                                    <p class="recomendacao-texto">Lorem Ipsum is simply dummy text of the printing and
+                                        typesetting industry. Lorem Ipsum has been
+                                        the industry's standard dummy text ever since</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fim = Recomendação 02 -->
+
+                <!-- Controles do carrosel -->
+                <a href="slider" class="carousel-control-prev" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span></a>
+                <a href="slider" class="carousel-control-next" role="next" data-slide="next">
+                    <span class="carousel-control-next-icon"></span></a>
+            </div>
+        </div>
+    </section>
+    <!-- FIM = AREA DE RECOMENDAÇÕES -->
+
+
+
+
+
+
+    <!-- INICIO = CONTATO -->
+    <section id="contato">
+        <div class="container-fluid no-padding">
+            <div class="row">
+                <!-- Parte da imagem do meu google maps -->
+                <div class="col-md-6 my-3">
+                    <div class="embed-responsive by9 mapa">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15207.939494871744!2d-46.556134318227606!3d-23.54749335122369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5e8b75daaaab%3A0x709317b3b46cb8f2!2sRust%26Oil!5e0!3m2!1spt-BR!2sbr!4v1592963867764!5m2!1spt-BR!2sbr"
+                            width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""
+                            aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </div>
+
+                <!-- Parte do meu "Entre em contato" ao lado do mapa -->
+                <div class="col-md-6 my-3 align-self-center">
+                    <div class="cartao text-center ">
+                        <div class="cartao-cabecalho text-uppercase">
+                            <h1 class="text-uppercase">Entre em Contato</h1>
+                        </div>
+
+                        <div class="corpo-cartao">
+                            <form>
+                                <!--INICIO = Grupo de caixas de texto 01 -->
+                                <div class="input-group my-3">
+                                    <div class="input-group prepend">
+                                        <span class="input-group-text" id="input-text">
+                                            <i class="fas fa-user"></i>
+                                        </span>
+                                        <input type="text" id="text" class="form-control-lg"
+                                            placeholder="Informe o seu nome">
+                                    </div>
+                                </div>
+                                <!-- FIM = Grupo de caixas de texto 01 -->
+
+
+                                <!--INICIO = Grupo de caixas de texto 02 -->
+                                <div class="input-group my-3">
+                                    <div class="input-group prepend">
+                                        <span class="input-group-text" id="input-telefone">
+                                            <i class="fas fa-phone"></i>
+                                        </span>
+                                        <input type="text" id="telefone" class="form-control-lg"
+                                            placeholder="Informe o seu telefone">
+                                    </div>
+                                </div>
+                                <!-- FIM = Grupo de caixas de texto 02-->
+
+
+
+                                <!--INICIO = Grupo de caixas de texto 03-->
+                                <div class="input-group my-3">
+                                    <div class="input-group prepend">
+                                        <span class="input-group-text" id="input-email">
+                                            <i class="fas fa-envelope"></i>
+                                        </span>
+                                        <input type="text" id="email" class="form-control-lg"
+                                            placeholder="Informe o seu e-mail">
+                                    </div>
+                                </div>
+                                <!-- FIM = Grupo de caixas de texto 03-->
+
+
+
+                                <!--INICIO = Grupo de caixas de texto 04-->
+                                <div class="input-group my-3">
+                                    <div class="input-group prepend">
+                                        <textarea rows="5" class="form-control form-control-lg" id="mensagem"
+                                            placeholder="Escreva sua mensagem"></textarea>
+
+                                    </div>
+                                </div>
+                                <!-- FIM = Grupo de caixas de texto 04-->
+
+                                <!-- Criando um botão de enviar -->
+                                <button type="submit" class="btn btn-block btn-lg text-uppercase contato-btn"><i
+                                        class="far fa-hand-point-right mr-2">Enviar</i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FIM = CONTATO -->
+
+
+
+
+
+    <!-- #INÍCIO = RODAPÉ -->
+
+    <footer>
+        <div class="container-fluid p-2 info" id="icones-topo">
+            <div class="row">
+                <div
+                    class="col d-flex justify-content-center justify-content-md-between justify-content-sm-between align-items-baseline flex-wrap">
+                    <div class="p-2 info-icones">
+                        <a href="#" class="mr-2" alt="facebook"><i class="fab fa-facebook-square fa-2x"></i></a>
+
+                        <a href="#" class="mr-2" alt="instagram"><i class="fab fa-instagram fa-2x"></i></a>
+                        <a href="#" class="mr-2" alt="twitter"><i class="fab fa-twitter-square fa-2x"></i></a>
+                        <a href="#" class="mr-2" alt="whatsapp"><i class="fab fa-whatsapp-square fa-2x"></i></a>
+                    </div>
+                </div>
+                <h2 id="copyright" class="p-2 text-capitalize"><a href="#" title="Voltar ao início">&copy;Copyright
+                        2020</a>
+                </h2>
+            </div>
+        </div>
+
+        <!-- Botão de Retornar ao Topo -->
+        <a href="#icones-topo" id="voltar-topo" class="p-1" title="Voltar ao topo"><i
+                class="fas fa-arrow-circle-up fa-2x"></i></a>
+    </footer>
+    <!-- #FIM = RODAPÉ-->
+
+
+
+
+
+
+
+    <!-- INICIO = PEDIDO MODAL -->
+    <div id="pedidoModal" class="modal fade">
+        <div class="modal-dialog  modal-pedido">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="avatar">
+                        <img src="/img/icones/list.png" alt="Ícone da Tela de Pedido Online">
+                    </div>
+                    <h4 class="modal-title">Pedido Online</h4>
+                    <button type="button" class="close" data-dismiss="modal" arial-hidden="true">&times;</button>
+
+                </div>
+
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="nome" placeholder="Digite o seu nome"
+                                required="required">
+                        </div>
+
+                        <div class="form-group">
+                            <textarea rows="3" class="form-control" name="pedido"
+                                placeholder="O que você deseja pedir ?" required="required"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-lg btn-block login-btn">Pedir</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer"></div>
+            </div>
+        </div>
+
+    </div>
+    <!-- FIM = PEDIDO MODAL -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Referenciando meu arquivo Jquery. Serve para fazer uns efeitos visuais. -->
+    <script src="/js/jquery-3.5.1.min.js"></script>
+
+
+    <!-- Referenciando meu arquivo Bootstrap js. Estou referenciando aqui embaixo por questão de desempenho, pra pagina carregar mais rapida, sempre a gente deixa os scrpits pro final, por que o que interessa carregar primeiro pro usuário é o visual pra depois carregar os scrits. -->
+    <script src="/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Referenciando arquivo de Efeito de Fumaça. -->
+    <script src="/js/jquery.ripples-min.js"></script>
+
+    <!-- Magnific Popip = Para abrir as imagens em forma de slides -->
+    <script src="/magnific-popup/jquery.magnific-popup.js"></script>
+
+    <!-- Slider do Carrosel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js"></script>
+
+    <!-- Meu próprio Js Personalizado -->
+    <script src="/js/script.js"></script>
+
+</body>
+
+</html>
