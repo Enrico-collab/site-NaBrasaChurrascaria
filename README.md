@@ -1,4 +1,4 @@
-﻿# site-NaBrasaChurrascaria
+﻿# NaBrasa Churrascaria
 
 Site responsivo criado com HTML5, CSS3, SASS e JS. 
 Nesse projeto, desenvolvi um Front-End responsivo moderno do zero usando recursos e abordagens atuais. Utilizei como ferramentas de desenvolvimento o Visual Studio Code e o Adobe XD. No Adobe XD foi criado a concepção/protótipo do projeto. No VSCode foi criado o desenvolvimento da interface com frameworks (bootstrap), com recursos e ferramentas para tornar o visual atrativo, incluindo animações e interatividade.
