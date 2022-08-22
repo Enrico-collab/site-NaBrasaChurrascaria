@@ -5,6 +5,7 @@ Nesse projeto, desenvolvi um Front-End responsivo moderno do zero usando recurso
 
 Link para visualização: https://nabrasa-churrascaria.netlify.app
 
+# NaBrasa Steakhouse
 
 Responsive website created with HTML5, CSS3, SASS and JS.
 In this project, I developed a modern responsive Front End from scratch using current resources and approaches. I used Visual Studio Code and Adobe XD as development tools. In Adobe XD, the design/prototype of the project was created. In VSCode, the development of the interface with frameworks (bootstrap) was created, with resources and tools to make the visual attractive, including animations and interactivity.
